@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMOVIE:스토어</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .before {
+            text-align: right;
+            margin-left: 162px;
+            margin-right: 162px;
+            padding-top: 10px;
+        }
+
+        .before>a {
+            font-size: 0.9rem;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        .name>.h1 {
+            color: black;
+            text-decoration: none;
+            font-size: 50px;
+            display: inline-block;
+            width: 500px;
+            font-weight: bold;
+        }
+
+
+        .navbar {
+            display: inline-block;
+            width: 500px;
+        }
+
+        .navbar li {
+            width: 100px;
+
+        }
+
+        .navbar>ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+
+        .movie_title {
+            color: white;
+            font-size: 40px;
+
+        }
+
+        .movieSelection_txt {
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .poster1 {
+            display: inline-block;
+            background-color: #EBEBEB;
+            width: 310px;
+            height: 250px;
+           
+        }
+
+
+
+
+        .poster_wrap {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .poster_button_wrap1 {
+            width: 400px;
+            margin-right: 10px;
+        }
+
+        .footer_wrap {
+            border-top: 1px solid black;
+            margin-top: -100px;
+            padding: 50px;
+
+        }
+
+        footer {
+            height: 80px;
+            position: relative;
+            transform: translateY(-100%);
+            width: 100%;
+            margin-top: 300px;
+        }
+
+
+        .text {
+            margin-top: 200px;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .movieSelection_txt {
+            font-weight: bold;
+        }
+
+        .movie_title {
+            display: block;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgb(0 0 0 / 72%);
+        }
+
+        .lookButton {
+            position: absolute;
+            top: 495px;
+            background-color: #D2D1D0;
+            width: 100px;
+            border-radius: 30px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            padding: 6px 0 6px 12px;
+        }
+
+        .arrows {
+            width: 13x;
+            height: 13px;
+        }
+
+
+
+        .poster_button {
+            position: absolute;
+            border-radius: 30px;
+            padding: 6px 0 6px 12px;
+            width: 100px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #BEBEBE;
+        }
+
+        .poster_button_wrap {
+            display: inline-block;
+            margin-right: 62px;
+            text-align: right;
+            margin-top: 50px;
+        }
+
+        .poster_title {
+            font-size: 20px;
+            margin-top: 4px;
+            margin-left: 70px;
+            font-weight: bold;
+        }
+
+        .poster_title_wrap {
+            display: inline-block;
+            width: 980px;
+            text-align: center;
+            margin-bottom: -100px;
+        }
+
+        .home_icon {
+            margin-left: 12px;
+            width: 13px;
+            height: 100%;
+            color: #AAAAAA;
+        }
+
+        .location {
+            display: inline-block;
+            width: 1145px;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .page_util {
+            border-top: 1px solid black;
+            background-color: #F8F8FA;
+            height: 42px;
+        }
+
+        .util_arrows {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url('/image/arrows_right.png') no-repeat;
+            color: black;
+            margin-left: 10px;
+            color: #AAAAAA;
+        }
+        .pull_page {
+            text-decoration: none;
+            color: black;
+        }
+
+        .inner_wrap {
+            display: inline-block;
+            width: 1100px;
+        }
+
+        .full_poster_title {
+            text-align: left;
+            margin-left: 22px;
+            margin-top: 40px;
+        }
+
+        .poster_name span {
+            font-size: 20px;
+        }
+
+        .poster_name {
+            text-align: left;
+            margin-left: 22px;
+            margin-top: 10px;
+            margin-bottom: -10px;
+        }
+
+        .poster_name span {
+            margin-left: 10px;
+        }
+
+        .age_icon {
+            margin-bottom: -2px;
+        }
+
+
+        .day {
+            margin-left: 10px;
+
+        }
+
+        .line {
+            margin-left: -4px;
+            margin-right: -15px;
+            height: 11px;
+        }
+        .full_name{
+            font-size: 14px;
+        }
+        .price{
+            font-weight: bold;
+            font-size: 23px;
+        }
+        .movie_poster1 h3{
+            margin-bottom: -8px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="before">
+            <a href="login.html" title="로그인">로그인</a>
+            <a href="sign_up.html" title="회원가입">회원가입</a>
+        </div>
+
+
+
+
+        <div class="name">
+            <a href="index.html" class="h1" title="HAMOVIE">HAMOVIE</a>
+        </div>
+
+
+        <div class="navbar">
+            <ul>
+                <li><a href="allmovie.html" title="전체 영화 페이지로 이동">영화</a></li>
+                <li><a href="book.html" title="예매 페이지로 이동">예매</a></li>
+                <li><a href="theater.html" title="극장 페이지로 이동">극장</a></li>
+                <li><a href="store.html"title="스토어 페이지로 이동">스토어</a></li>
+            </ul>
+        </div>
+        <div>
+
+
+            <div class="page_util">
+                <div class="inner_wrap">
+                    <div class="location">
+                        <a href="index.html" title="홈 화면으로 이동"><img src="/image/home.png" class="home_icon"></a><span
+                            class="util_arrows"></span>
+                        <a href="store.html" class="pull_page" title="스토어 페이지로 이동">스토어</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="inner_wrap">
+
+                <div class="full_poster_title">
+                    <h3>스낵음료</h3>
+                </div>
+                
+                <div class="poster_wrap">
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/스위트콤보.jpg" alt="스위트콤보"></div>
+                            <h3>스위트 콤보</h3>
+                            <p class="full_name">오리지널L + 탄산음료M2</p>
+                            <p class="price">10,000원</p>
+                        </div>
+                        
+                    </div>
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/더블콤보.jpg" alt="더블콤보"></div>
+                            <h3>더블콤보</h3>
+                            <p class="full_name">카라멜팝콘M + 오리지널팝콘M + 탄산음료M2</p>
+                            <p class="price">15,000원</p>
+                        </div>
+                    </div>
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/콜라M.jpg" alt="콜라M"></div>
+                            <h3>콜라M</h3>
+                            <p class="full_name">콜라M</p>
+                            <p class="price">2,500원</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="poster_wrap">
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/콜라L.jpg" alt="콜라L"></div>
+                            <h3>콜라L</h3>
+                            <p class="full_name">콜라L</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                        
+                    </div>
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/사이다M.jpg" alt="사이다M"></div>
+                            <h3>사이다M</h3>
+                            <p class="full_name">사이다M</p>
+                            <p class="price">2,500원</p>
+                        </div>
+                    </div>
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/사이다L.jpg" alt="사이다L"></div>
+                            <h3>사이다L</h3>
+                            <p class="full_name">사이다L</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster_wrap">
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/오리지널팝콘M.jpg" alt="오리지널팝콘M"></div>
+                            <h3>오리지널팝콘M</h3>
+                            <p class="full_name">오리지널팝콘M</p>
+                            <p class="price">5,000원</p>
+                        </div>
+                        
+                    </div>
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/오리지널팝콘L.jpg" alt="오리지널팝콘L"></div>
+                            <h3>오리지널팝콘L</h3>
+                            <p class="full_name">오리지널팝콘L</p>
+                            <p class="price">5,500원</p>
+                        </div>
+                    </div>
+                    <div class="poster_button_wrap1">
+                        <div class="movie_poster1">
+                            <div class="poster1"><img src="/store_image/카라멜팝콘M.jpg" alt="카라멜팝콘M"></div>
+                            <h3>카라멜팝콘M</h3>
+                            <p class="full_name">카라멜팝콘M</p>
+                            <p class="price">6,000원</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <footer>
+                <div class="footer_wrap">
+                    <p>상호명 : (주)HAMOVIE / 대표 : 정하은 / 주소 : 부산시 부산진구 중앙대로 708<br>
+                        고객선터 : 1588-1234/ 팩스 : 051-1234-1234 / 이메일 : abcdef@naver.com / 통신판매업신고번호 : 2022-부산진구-1117<br>
+                        <span>copyright (c) hamovie.co.kr all rights reserved.</span>
+                    </p>
+                </div>
+            </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMOVIE:스토어</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .before {
+            text-align: right;
+            margin-left: 162px;
+            margin-right: 162px;
+            padding-top: 10px;
+        }
+
+        .before>a {
+            font-size: 0.9rem;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        .name>.h1 {
+            color: black;
+            text-decoration: none;
+            font-size: 50px;
+            display: inline-block;
+            width: 500px;
+            font-weight: bold;
+        }
+
+
+        .navbar {
+            display: inline-block;
+            width: 500px;
+        }
+
+        .navbar li {
+            width: 100px;
+
+        }
+
+        .navbar>ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+
+        .footer_wrap {
+            border-top: 1px solid black;
+            margin-top: -100px;
+            padding: 50px;
+
+        }
+
+        footer {
+            height: 80px;
+            position: relative;
+            transform: translateY(-100%);
+            width: 100%;
+            margin-top: 300px;
+        }
+
+
+        .home_icon {
+            margin-left: 12px;
+            width: 13px;
+            height: 100%;
+            color: #AAAAAA;
+        }
+
+        .location {
+            display: inline-block;
+            width: 1145px;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .page_util {
+            border-top: 1px solid black;
+            background-color: #F8F8FA;
+            height: 42px;
+        }
+
+        .util_arrows {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url('/image/arrows_right.png') no-repeat;
+            color: black;
+            margin-left: 10px;
+            color: #AAAAAA;
+        }
+
+        .pull_page {
+            text-decoration: none;
+            color: black;
+        }
+
+        .inner_wrap {
+            position: relative;
+            display: inline-block;
+            width: 1100px;
+        }
+
+        .book_wrap {
+            position: relative;
+            display: inline-block;
+            width: 1100px;
+            margin-left: 21px;
+
+        }
+
+        .book_title {
+            position: relative;
+            text-align: left;
+            border-top: 1px solid black;
+            margin-top: 30px;
+            padding-top: 10px;
+        }
+
+        .book_title>h5 {
+            display: inline;
+
+        }
+
+        .book_title>button {
+            position: absolute;
+            background-color: white;
+            right: 0;
+            border: 1px solid black;
+        }
+
+        .book_title>button img {
+            height: 11px;
+        }
+
+        .book_title>button a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .book_main_header {
+            display: inline-block;
+            height: 60px;
+            width: 100%;
+            background-color: #F2F4F5;
+            margin-top: 15px;
+            border: 1px solid #D1D1D1;
+            margin-bottom: -4px;
+        }
+
+        .count {
+            margin-left: 10px;
+            line-height: 3.7;
+            float: left;
+            display: flex;
+        }
+
+        .count>.number {
+            display: inline-block;
+            z-index: 1;
+        }
+
+        .count>.number>.now {
+            width: 42px;
+            border: 1px solid #CCCCCC;
+            height: 32px;
+            font-size: 1.2em;
+            background-color: white;
+        }
+
+        .count>.plus>.plus_button {
+            margin-left: -3px;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #CCCCCC;
+            font-size: 1.2em;
+            border-radius: 0 5px 5px 0;
+            background-color: white;
+        }
+
+        .count>.minus>.minus_button {
+            margin-right: -3px;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #CCCCCC;
+            font-size: 1.2em;
+            border-radius: 5px 0 0 5px;
+            background-color: white;
+        }
+
+        .cell>p {
+            margin-top: 18.5px;
+            margin-left: 20px;
+            float: left;
+            display: inline-block;
+            width: 34px;
+            font-size: 16px;
+        }
+        .cell1 >p {
+            margin-top: 18.5px;
+            margin-left: 40px;
+            float: left;
+            display: inline-block;
+            width: 50px;
+            font-size: 16px;
+        }
+
+ 
+        .cell2 >p {
+            margin-top: 18.5px;
+            margin-left: 40px;
+            float: left;
+            display: inline-block;
+            width: 34px;
+            font-size: 16px;
+        }
+        .seat_choice{
+            display: inline-block;
+            width: 100%;
+            height: 510px;
+            border: 1px solid #D1D1D1;
+        }
+        .screen_img{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .seat{
+            margin-left: -7px;
+            border: 1px solid #02BFD3;
+            background-color: #7F7F7F;
+            color: white;
+            width: 23px;
+            height: 23px;
+        }
+        .btn-seat-row{
+            margin-right: 40px;
+            border: 1px solid #BEBEBE;
+            background-color: white;
+            width: 23px;
+            height: 23px;
+        }
+        .seat4{
+            margin-right: 30px;
+        }
+        .row{
+            margin-right: 80px;
+        }
+        .top_exit{
+            margin-left: 205px;
+            color: #CECECE;
+        }
+        .bottom_exit{
+            transform:rotate(270deg);
+            margin-right: 157px;
+            width: 18px;
+            margin-top:3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="before">
+            <a href="login.html" title="로그인">로그인</a>
+            <a href="sign_up.html" title="회원가입">회원가입</a>
+        </div>
+
+
+
+
+        <div class="name">
+            <a href="index.html" class="h1" title="HAMOVIE">HAMOVIE</a>
+        </div>
+
+
+        <div class="navbar">
+            <ul>
+                <li><a href="allmovie.html" title="전체 영화 페이지로 이동">영화</a></li>
+                <li><a href="book.html" title="예매 페이지로 이동">예매</a></li>
+                <li><a href="theater.html" title="극장 페이지로 이동">극장</a></li>
+                <li><a href="store.html"title="스토어 페이지로 이동">스토어</a></li>
+            </ul>
+        </div>
+        <div>
+
+
+            <div class="page_util">
+                <div class="inner_wrap">
+                    <div class="location">
+                        <a href="index.html" title="홈 화면으로 이동"><img src="/image/home.png" class="home_icon"></a><span
+                            class="util_arrows"></span>
+                        <a href="book.html" class="pull_page" title="예매 페이지로 이동">예매</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="book_wrap">
+                <div class="book_title">
+                    <h5>관람인원선택</h5>
+                    <button><a href="#"><img src="/image/reset.png" alt="리셋 아이콘">&nbsp초기화</a></button>
+                </div>
+                <div class="book_main">
+                    <div class="book_main_header">
+                        <div class="cell">
+                            <p>성인</p>
+                            <div class="count">
+                                <div class="minus"><button class="minus_button" title="성인 좌석 선택 감소">-</button></div>
+                                <div class="number"><button class="now" title="성인 현재 좌석 선택 수">0</button></div>
+                                <div class="plus"><button class="plus_button" title="성인 좌석 선택 증가">+</button></div>
+                            </div>
+                        </div>
+                        <div class="cell1">
+                            <p>청소년</p>
+                            <div class="count">
+                                <div class="minus"><button class="minus_button" title="청소년 좌석 선택 감소">-</button></div>
+                                <div class="number"><button class="now" title="청소년 현재 좌석 선택 수">0</button></div>
+                                <div class="plus"><button class="plus_button" title="청소년 좌석 선택 증가">+</button></div>
+                            </div>
+                        </div>
+                        <div class="cell2">
+                            <p>우대</p>
+                            <div class="count">
+                                <div class="minus"><button class="minus_button" title="우대 좌석 선택 감소">-</button></div>
+                                <div class="number"><button class="now" title="우대 현재 좌석 선택 수">0</button></div>
+                                <div class="plus"><button class="plus_button" title="우대 좌석 선택 증가">+</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seat_choice">
+                    <div class="screen_img"><img src="/image/screen.png" alt="스크린"></div>
+                    <img src="/image/exit.png" alt="exit" class="top_exit">
+                    <div class="row">
+                        <button class="btn-seat-row" title="A행">A</button>
+                        <button class="seat" title="A1">1</button>
+                        <button class="seat" title="A2">2</button>
+                        <button class="seat" title="A3">3</button>
+                        <button class="seat seat4" title="A4">4</button>
+                        <button class="seat" title="A5">5</button>
+                        <button class="seat" title="A6">6</button>
+                        <button class="seat" title="A7">7</button>
+                        <button class="seat" title="A8">8</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-seat-row" title="B행">B</button>
+                        <button class="seat" title="B1">1</button>
+                        <button class="seat" title="B2">2</button>
+                        <button class="seat" title="B3">3</button>
+                        <button class="seat seat4" title="B4">4</button>
+                        <button class="seat" title="B5">5</button>
+                        <button class="seat" title="B6">6</button>
+                        <button class="seat" title="B7">7</button>
+                        <button class="seat" title="B8">8</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-seat-row" title="C행">C</button>
+                        <button class="seat" title="C1">1</button>
+                        <button class="seat" title="C2">2</button>
+                        <button class="seat" title="C3">3</button>
+                        <button class="seat seat4" title="C4">4</button>
+                        <button class="seat" title="C5">5</button>
+                        <button class="seat" title="C6">6</button>
+                        <button class="seat" title="C7">7</button>
+                        <button class="seat" title="C8">8</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-seat-row" title="D행">D</button>
+                        <button class="seat" title="D1">1</button>
+                        <button class="seat" title="D2">2</button>
+                        <button class="seat" title="D3">3</button>
+                        <button class="seat seat4" title="D4">4</button>
+                        <button class="seat" title="D5">5</button>
+                        <button class="seat" title="D6">6</button>
+                        <button class="seat" title="D7">7</button>
+                        <button class="seat" title="D8">8</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-seat-row" title="E행">E</button>
+                        <button class="seat" title="E1">1</button>
+                        <button class="seat" title="E2">2</button>
+                        <button class="seat" title="E3">3</button>
+                        <button class="seat seat4" title="E4">4</button>
+                        <button class="seat" title="E5">5</button>
+                        <button class="seat" title="E6">6</button>
+                        <button class="seat" title="E7">7</button>
+                        <button class="seat" title="E8">8</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-seat-row" title="F행">F</button>
+                        <button class="seat" title="F1">1</button>
+                        <button class="seat" title="F2">2</button>
+                        <button class="seat" title="F3">3</button>
+                        <button class="seat seat4" title="F4">4</button>
+                        <button class="seat" title="F5">5</button>
+                        <button class="seat" title="F6">6</button>
+                        <button class="seat" title="F7">7</button>
+                        <button class="seat" title="F8">8</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-seat-row" title="G행">G</button>
+                        <button class="seat" title="G1">1</button>
+                        <button class="seat" title="G2">2</button>
+                        <button class="seat" title="G3">3</button>
+                        <button class="seat seat4" title="G4">4</button>
+                        <button class="seat" title="G5">5</button>
+                        <button class="seat" title="G6">6</button>
+                        <button class="seat" title="G7">7</button>
+                        <button class="seat" title="G8">8</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn-seat-row" title="H행">H</button>
+                        <button class="seat" title="H1">1</button>
+                        <button class="seat" title="H2">2</button>
+                        <button class="seat" title="H3">3</button>
+                        <button class="seat seat4" title="H4">4</button>
+                        <button class="seat" title="H5">5</button>
+                        <button class="seat" title="H6">6</button>
+                        <button class="seat" title="H7">7</button>
+                        <button class="seat" title="H8">8</button>
+                    </div>
+                    <img src="/image/exit.png" alt="exit" class="bottom_exit">
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer_wrap">
+                    <p>상호명 : (주)HAMOVIE / 대표 : 정하은 / 주소 : 부산시 부산진구 중앙대로 708<br>
+                        고객선터 : 1588-1234/ 팩스 : 051-1234-1234 / 이메일 : abcdef@naver.com / 통신판매업신고번호 : 2022-부산진구-1117<br>
+                        <span>copyright (c) hamovie.co.kr all rights reserved.</span>
+                    </p>
+                </div>
+            </footer>
+
+</body>
+
+</html>

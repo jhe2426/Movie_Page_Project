@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMOVIE</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .before {
+            text-align: right;
+            margin-left: 162px;
+            margin-right: 162px;
+            padding-top: 10px;
+        }
+
+        .before>a {
+            font-size: 0.9rem;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        .name>.h1 {
+            color: black;
+            text-decoration: none;
+            font-size: 50px;
+            display: inline-block;
+            width: 500px;
+            font-weight: bold;
+        }
+
+
+        .navbar {
+            display: inline-block;
+            width: 500px;
+        }
+
+        .navbar li {
+            width: 100px;
+
+        }
+
+        .navbar>ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+
+        .movie_title {
+            color: white;
+            font-size: 40px;
+
+        }
+
+        .movieSelection_txt {
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .poster1 {
+            display: inline-block;
+            background-color: #EBEBEB;
+            width: 245px;
+            height: 352px;
+        }
+
+        .bookbutton1 {
+            display: inline-block;
+            width: 152px;
+            height: 38px;
+            background-color: #6ECDF9;
+            border-radius: 4px;
+            font-size: 12px;
+            border: none;
+        }
+
+        .like_icon {
+            width: 12.7px;
+            height: 12.7px;
+        }
+
+        .like1 {
+            display: inline-block;
+            width: 90px;
+            height: 38px;
+            border: 1px solid #EBEBEB;
+            background-color: white;
+            border-radius: 4px;
+            font-size: 17px;
+        }
+
+        .poster_wrap {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .poster_button_wrap1 {
+            width: 300px;
+        }
+
+        .footer_wrap {
+            border-top: 1px solid black;
+            margin-top: -100px;
+            padding: 50px;
+
+        }
+
+        footer {
+            height: 80px;
+            position: relative;
+            transform: translateY(-100%);
+            width: 100%;
+            margin-top: 300px;
+        }
+
+        .movievideo {
+            margin-top: 1px;
+            display: inline-block;
+            background: url(/main_page_movie_image/main_image.png);
+            width: 980px;
+            height: 500px;
+            background-repeat: no-repeat;
+
+        }
+
+        .videobackground {
+            height: 500px;
+            background-color: black;
+
+        }
+
+        .text {
+            margin-top: 200px;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .movieSelection_txt {
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgb(0 0 0 / 72%);
+        }
+
+        .movie_title {
+            display: block;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgb(0 0 0 / 72%);
+        }
+
+        .lookButton {
+            position: absolute;
+            top: 495px;
+            background-color: white;
+            width: 100px;
+            border-radius: 30px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            padding: 6px 0 6px 12px;
+            border: 1px solid black;
+        }
+
+        .arrows {
+            width: 13x;
+            height: 13px;
+        }
+
+
+
+        .poster_button {
+            position: absolute;
+            border-radius: 30px;
+            padding: 6px 0 6px 12px;
+            width: 100px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #BEBEBE;
+
+        }
+
+        .poster_button_wrap {
+            display: inline-block;
+            margin-right: 62px;
+            text-align: right;
+            margin-top: 50px;
+        }
+
+        .poster_title {
+            font-size: 20px;
+            margin-top: 4px;
+            margin-left: 70px;
+            font-weight: bold;
+        }
+
+        .poster_title_wrap {
+            display: inline-block;
+            width: 980px;
+            text-align: center;
+            margin-bottom: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="before">
+            <a href="login.html" title="로그인">로그인</a>
+            <a href="sign_up.html" title="회원가입">회원가입</a>
+        </div>
+
+
+
+
+        <div class="name">
+            <a href="index.html" class="h1" title="HAMOVIE">HAMOVIE</a>
+        </div>
+
+
+        <div class="navbar">
+            <ul>
+                <li><a href="allmovie.html" title="전체 영화 페이지로 이동">영화</a></li>
+                <li><a href="book.html" title="예매 페이지로 이동">예매</a></li>
+                <li><a href="theater.html" title="극장 페이지로 이동">극장</a></li>
+                <li><a href="store.html"title="스토어 페이지로 이동">스토어</a></li>
+            </ul>
+        </div>
+        <div>
+
+
+            <div class="videobackground">
+                <div class="movievideo">
+                    <div class="text">
+                        <strong class="movie_title">짱구는 못말려</strong>
+                        <span class="movieSelection_txt">수수께끼! 꽃피는 천하떡잎학교<br>절찬 상영중</span><br>
+                        <a href="#" class="lookButton">상세보기&nbsp;&nbsp;<img src="/image/arrows.png" class="arrows"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+            <div class="poster_button_wrap">
+                <div class="poster_title_wrap">
+                    <p class="poster_title">박스오피스</p>
+                </div>
+                <a href="allmovie.html" class="poster_button">전체보기&nbsp;&nbsp;<img src="/image/arrows.png" class="arrows"></a>
+            </div>
+
+
+            <div class="poster_wrap">
+
+
+                <div class="poster_button_wrap1">
+                    <div class="movie_poster1">
+                        <div class="poster1"><img src="/main_page_movie_image/movie1.jpg" alt="올빼미 영화 포스터 사진"></div>
+                    </div>
+                    <button type="button" class="like1"><img src="/image/like_icon.png" class="like_icon"> 635</button>
+                    <button class="bookbutton1">예매하기</button>
+                </div>
+                <div class="poster_button_wrap1">
+                    <div class="movie_poster1">
+                        <div class="poster1"><img src="/main_page_movie_image/movie2.jpg" alt="양 자경의 더 모든날 모든 순간 영화 포스터 사진"></div>
+                    </div>
+
+                    <button type="button" class="like1"><img src="/image/like_icon.png" class="like_icon"> 300</button>
+                    <button class="bookbutton1">예매하기</button>
+                </div>
+                <div class="poster_button_wrap1">
+                    <div class="movie_poster1">
+                        <div class="poster1"><img src="/main_page_movie_image/movie3.jpg" alt="블랙팬서 와칸다 포에버 영화 포스터 사진"></div>
+                    </div>
+
+                    <button type="button" class="like1"><img src="/image/like_icon.png" class="like_icon"> 1.8K</button>
+                    <button class="bookbutton1">예매하기</button>
+                </div>
+                <div class="poster_button_wrap1">
+                    <div class="movie_poster1">
+                        <div class="poster1"><img src="/main_page_movie_image/movie4.jpg" alt="동감 영화 포스터 사진"></div>
+                    </div>
+
+                    <button type="button" class="like1"><img src="/image/like_icon.png" class="like_icon"> 917</button>
+                    <button class="bookbutton1">예매하기</button>
+                </div>
+
+            </div>
+
+
+
+
+            <footer>
+                <div class="footer_wrap">
+                    <p>상호명 : (주)HAMOVIE / 대표 : 정하은 / 주소 : 부산시 부산진구 중앙대로 708<br>
+                        고객선터 : 1588-1234/ 팩스 : 051-1234-1234 / 이메일 : abcdef@naver.com / 통신판매업신고번호 : 2022-부산진구-1117<br>
+                        <span>copyright (c) hamovie.co.kr all rights reserved.</span>
+                    </p>
+                </div>
+            </footer>
+
+</body>
+
+</html>

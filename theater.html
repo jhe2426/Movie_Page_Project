@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMOVIE:스토어</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .before {
+            text-align: right;
+            margin-left: 162px;
+            margin-right: 162px;
+            padding-top: 10px;
+        }
+
+        .before>a {
+            font-size: 0.9rem;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        .name>.h1 {
+            color: black;
+            text-decoration: none;
+            font-size: 50px;
+            display: inline-block;
+            width: 500px;
+            font-weight: bold;
+        }
+
+
+        .navbar {
+            display: inline-block;
+            width: 500px;
+        }
+
+        .navbar li {
+            width: 100px;
+
+        }
+
+        .navbar>ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+
+        .footer_wrap {
+            border-top: 1px solid black;
+            margin-top: -100px;
+            padding: 50px;
+
+        }
+
+        footer {
+            height: 80px;
+            position: relative;
+            transform: translateY(-100%);
+            width: 100%;
+            margin-top: 300px;
+        }
+
+
+        .home_icon {
+            margin-left: 12px;
+            width: 13px;
+            height: 100%;
+            color: #AAAAAA;
+        }
+
+        .location {
+            display: inline-block;
+            width: 1145px;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .page_util {
+            border-top: 1px solid black;
+            background-color: #F8F8FA;
+            height: 42px;
+        }
+
+        .util_arrows {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url('/image/arrows_right.png') no-repeat;
+            color: black;
+            margin-left: 10px;
+            color: #AAAAAA;
+        }
+
+        .pull_page {
+            text-decoration: none;
+            color: black;
+        }
+
+        .inner_wrap {
+            display: inline-block;
+            width: 1100px;
+        }
+
+        .theater_title>.header_title {
+            margin-top: -20px;
+            font-weight: bold;
+            font-size: 55px;
+            color: #6BD0FD;
+        }
+
+        /*배경 크기 나중에 집에서 한번 더 확인 해보기*/
+        .theater_title {
+            margin-top: 50px;
+            text-align: center;
+            display: inline-block;
+            width: 1057px;
+            height: 120px;
+            background: url('/image/title_background.png');
+        }
+
+        .theater_title>p {
+            margin-top: 15px;
+        }
+
+        .theater_image {
+            margin-top: 20px;
+        }
+
+        .theater_image>.theater_seat {
+            width: 1057px;
+
+        }
+
+        .main_contents1 {
+            display: inline-block;
+            width: 500px;
+            text-align: left;
+            margin-left: -550px;
+        }
+
+        .main_contents1>ul {
+            margin-top: -10px;
+            font-size: 14px;
+            margin-left: -5px;
+        }
+
+        .main_contents1>h3 {
+            margin-left: 15px;
+        }
+
+        .main_contents2>h3 {
+            margin-left: 15px;
+        }
+
+        .main_contents2 {
+            display: inline-block;
+            width: 500px;
+            text-align: left;
+            margin-left: -10px;
+        }
+
+        .main_contents2>ul {
+            margin-top: -10px;
+            font-size: 14px;
+            margin-left: -5px;
+        }
+
+        .contents_wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 50px);
+            width: 1057px;
+            margin-left: 560px;
+        }
+
+        .main_contents3 {
+            display: grid;
+            grid-template-columns: repeat(4, 270px);
+            margin-left: 10px;
+            margin-top: 25px;
+        }
+
+        .text {
+            position: relative;
+            color: white;
+            font-size: 18px;
+            margin-top: -200px;
+        }
+
+        .text:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 132px;
+            top: 35px;
+            width: 48px;
+            height: 3px;
+            margin: 0 0 0 -20px;
+            background-color: white;
+            border-radius: 30px;
+        }
+
+        .contents_wrap4{
+            text-align: left;
+            margin-top: 200px;
+        }
+        .main_contents4 > h3 {
+            margin-left: 15px;
+        }
+        .main_contents4 > ul {
+            margin-left: -5px;
+            margin-top: -10px;
+            font-size: 14px;
+            margin-bottom: -10px;
+            
+        }
+        .main_contents4 > ul>  li {
+            margin: 6px 0px;
+        }
+        .main_contents1 > ul>  li {
+            margin: 6px 0px;
+        }
+        .main_contents2 > ul>  li {
+            margin: 6px 0px;
+        }
+        .contents4_text{
+            display: inline-block;
+            margin-left: 14px;
+            font-size: 14px;    
+            color: #01738B;        
+        }
+        .symbol{
+            font-size: 16px;
+            color: #01738B;   
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="before">
+            <a href="login.html" title="로그인">로그인</a>
+            <a href="sign_up.html" title="회원가입">회원가입</a>
+        </div>
+
+
+
+
+        <div class="name">
+            <a href="index.html" class="h1" title="HAMOVIE">HAMOVIE</a>
+        </div>
+
+
+        <div class="navbar">
+            <ul>
+                <li><a href="allmovie.html" title="전체 영화 페이지로 이동">영화</a></li>
+                <li><a href="book.html" title="예매 페이지로 이동">예매</a></li>
+                <li><a href="theater.html" title="극장 페이지로 이동">극장</a></li>
+                <li><a href="store.html"title="스토어 페이지로 이동">스토어</a></li>
+            </ul>
+        </div>
+        <div>
+
+
+            <div class="page_util">
+                <div class="inner_wrap">
+                    <div class="location">
+                        <a href="index.html" title="홈 화면으로 이동"><img src="/image/home.png" class="home_icon"></a><span
+                            class="util_arrows"></span>
+                        <a href="theater.html" class="pull_page" title="극장 페이지로 이동">극장</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="inner_wrap">
+                <div class="theater_title">
+                    <p>더 부티크 스위트</p>
+                    <p class="header_title">THE BOUTIQUE SUITE</p>
+                </div>
+                <div class="theater_image"><img src="/image/theater.png" class="theater_seat" alt="극장 좌석 사진"></div>
+
+                <div class="contents_wrap">
+                    <div class="main_contents1">
+                        <h3>DESIGN</h3>
+                        <ul>
+                            <li>섬세하게 디자인된 인테리어와 넓은 개인 공간</li>
+                            <li>실용성에 아름다움을 더한 스칸디나비안 리클라이너 시트와 가구세트</li>
+                        </ul>
+                    </div>
+                    <div class="main_contents2">
+                        <h3>SCREEN · SOUND</h3>
+                        <ul>
+                            <li>선명한 화질과 색감의 4K프로젝션 시스템</li>
+                            <li>세계 최고 공연장이 선택한 MEYER/JBL 사운드</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_contents3">
+                    <div class="col">
+                        <img src="/image/theater_contents_image1.png" alt="리클라이너 시트">
+                        <p class="text">리클라이너 시트</p>
+                    </div>
+                    <div class="col">
+                        <img src="/image/theater_contents_image2.png" alt="2인 소파">
+                        <p class="text">2인 소파</p>
+                    </div>
+                    <div class="col">
+                        <img src="/image/theater_contents_image3.png" alt="4인 소파">
+                        <p class="text">4인 소파</p>
+                    </div>
+                    <div class="col">
+                        <img src="/image/theater_contents_image4.png" alt="서비스">
+                        <p class="text">서비스</p>
+                    </div>
+                </div>
+                <div class="contents_wrap4">
+                    <div class="main_contents4">
+                        <h3>SERVICE</h3>
+                        <ul>
+                            <li>상영관 내 음식 주문이 가능한 룸서비스</li>
+                            <li>편안한 관람을 위해 제공되는 스위트 패키지(프리미엄 웰컴 음료, 무릎담요, 실내용 슬리퍼, 물티슈)</li>
+                            <li>와인 콜키지 서비스</li>
+                            <li>상영관 좌석까지 안내하는 에스코트 서비스와 부티크 이용의 편의를 제공하는 컨시어지 서비스</li>
+                        </ul>
+                        <p class="contents4_text"><span class="symbol" >※</span> 더 부티크 스위트는 만 13세 이상 고객님의 이용을 권장하고 있습니다. 쾌적한 관람을 위해 여러분의 양해 부탁 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer>
+                <div class="footer_wrap">
+                    <p>상호명 : (주)HAMOVIE / 대표 : 정하은 / 주소 : 부산시 부산진구 중앙대로 708<br>
+                        고객선터 : 1588-1234/ 팩스 : 051-1234-1234 / 이메일 : abcdef@naver.com / 통신판매업신고번호 : 2022-부산진구-1117<br>
+                        <span>copyright (c) hamovie.co.kr all rights reserved.</span>
+                    </p>
+                </div>
+            </footer>
+
+</body>
+
+</html>

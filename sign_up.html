@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #F7F7F7;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        .name>.h1 {
+            color: black;
+            text-decoration: none;
+            font-size: 50px;
+            display: inline-block;
+            width: 500px;
+            font-weight: bold;
+            padding: 20px;
+            margin-top: -8px;
+        }
+
+        .signUp_form_wrap {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .signUp_form {
+            background-color: white;
+            display: inline-block;
+            width: 524px;
+            height: 1035px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px 0 rgb(0 0 0 / 15%);
+            text-align: center;
+        }
+
+        .signUpHead {
+            font-size: 45px;
+            color: #6ECDF9;
+        }
+
+        h4 {
+            margin: 0;
+            display: inline-block;
+            width: 450px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .login_form {
+            text-align: center;
+        }
+
+
+        #signUp_userid {
+            width: 408px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 20px;
+            border: 1px solid #D3D3D3;
+        }
+
+        #signUp_userpassword {
+            width: 408px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 20px;
+            border: 1px solid #D3D3D3;
+        }
+
+        #signUp_userpasswordcheck {
+            width: 408px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 20px;
+            border: 1px solid #D3D3D3;
+        }
+
+        #sign_name {
+            width: 408px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 20px;
+            border: 1px solid #D3D3D3;
+        }
+
+        #sing_email {
+            width: 408px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 20px;
+            border: 1px solid #D3D3D3;
+        }
+
+
+        #userBirth_year {
+            width: 103px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 20px;
+            border: 1px solid #D3D3D3;
+        }
+
+        #userBirth_month {
+            width: 143px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 15px;
+            border: 1px solid #D3D3D3;
+            color: #757575;
+        }
+
+        #userBirth_day {
+            width: 103px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 20px;
+            border: 1px solid #D3D3D3;
+        }
+
+        #userGender {
+            width: 450px;
+            height: 50px;
+            border-radius: 30px;
+            padding: 0px 15px;
+            border: 1px solid #D3D3D3;
+            color: #757575;
+        }
+
+        .underLine {
+            display: inline-block;
+            border-bottom: 1px solid #E5E5E5;
+            width: 450px;
+        }
+
+        .signUp {
+            margin-top: 25px;
+        }
+
+        .signUp_id {
+            margin-top: -20px;
+            position: relative;
+        }
+
+        .signUp_bottom {
+            display: inline-block;
+            width: 450px;
+            text-align: left;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+
+        #agreeLabel {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .passwordFind {
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+            padding: 10px;
+
+        }
+
+        .idSignUp {
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+            padding: 10px;
+        }
+
+        .signUp_send {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            width: 450px;
+            border-radius: 30px;
+            border: none;
+            height: 50px;
+            margin-top: 32px;
+            background-color: #6BD0FD;
+        }
+
+        .SingUp_find {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .question {
+            color: #333333;
+            font-size: 16px;
+            padding: 1px;
+        }
+
+        .SignUpLogin {
+            padding: 17px;
+        }
+
+        .SignUpLoginButton {
+            background-color: white;
+            border: 1px solid black;
+            width: 86px;
+            font-size: 15px;
+        }
+
+        .signUp_id button {
+            position: absolute;
+            left: 392px;
+            top: 35px;
+            width: 90px;
+            height: 44px;
+            border-radius: 40px;
+            border: none;
+            background-color: #6BD0FD;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <div class="header">
+        <div class="name">
+            <a href="index.html" class="h1" title="HAMOVIE">HAMOVIE</a>
+        </div>
+    </div>
+
+
+
+    <div class="signUp_form_wrap">
+        <div class="signUp_form">
+            <h1 class="signUpHead">
+                <p>Sign up</p>
+            </h1>
+            <div class="signUp_id">
+                <h4>아이디</h4><br>
+                <input type="text" placeholder="아이디" id="signUp_userid">
+                <button id="signUp_userid_check">중복확인</button><br>
+            </div>
+            <div class="signUp">
+                <h4>비밀번호</h4><br>
+                <input type="password" placeholder="비밀번호" id="signUp_userpassword">
+            </div>
+            <div class="signUp">
+                <h4>비밀번호 재확인</h4><br>
+                <input type="password" placeholder="비밀번호 재확인" id="signUp_userpasswordcheck">
+            </div>
+            <div class="signUp">
+                <h4>이름</h4><br>
+                <input type="text" placeholder="이름" id="sign_name"><br>
+            </div>
+            <div class="signUp">
+                <h4>이메일</h4><br>
+                <input type="text" placeholder="이메일 주소" id="sing_email"><br>
+            </div>
+            <div class="signUp">
+                <h4>생년월일</h4>
+                <input type="text" maxlength='4' placeholder="년(4자리)" id="userBirth_year">
+                <select name="month" id="userBirth_month">
+                    <option disabled selected>월</option>
+                    <option value="1월">1월</option>
+                    <option value="2월">2월</option>
+                    <option value="3월">3월</option>
+                    <option value="4월">4월</option>
+                    <option value="5월">5월</option>
+                    <option value="6월">6월</option>
+                    <option value="7월">7월</option>
+                    <option value="8월">8월</option>
+                    <option value="9월">9월</option>
+                    <option value="10월">10월</option>
+                    <option value="11월">11월</option>
+                    <option value="12월">12월</option>
+                </select>
+                <input type="text" maxlength='2' placeholder="일" id="userBirth_day">
+            </div>
+            <div class="signUp">
+                <h4>성별</h4><br>
+                <select name="gender" id="userGender">
+                    <option disabled selected>성별 선택</option>
+                    <option value="man">남</option>
+                    <option value="female">여</option>
+                </select>
+            </div>
+            <div class="underLine"></div>
+            <div class="signUp_bottom">
+                <input type="checkbox" id="agreeCheckbox">
+                <label for="agreeCheckbox" id="agreeLabel">개인정보 수집 및 이용에 동의합니다.</label>
+            </div>
+            <a href="#"><input type="button" value="가입완료" class="signUp_send"></a><br>
+            <div class="SingUp_find">
+                <P class="question">회원이신가요?</P>
+                <a href="login.html" class="SignUpLogin"><input type="button" class="SignUpLoginButton" value="로그인"></a>
+            </div>
+        </div>
+
+
+
+
+
+
+</body>
+
+</html>
