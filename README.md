@@ -1,5 +1,4 @@
 # Movie_Page_Project<br>
-![image](https://github.com/jhe2426/Movie_Page_Project/assets/117806984/7dc96d1d-7dcd-4cb7-be79-1f81cf7dbb44)<br>
 ![image](https://github.com/jhe2426/Movie_Page_Project/assets/117806984/d738f23c-e6c5-495d-9a24-a6770fd2fc56)<br>
 ![image](https://github.com/jhe2426/Movie_Page_Project/assets/117806984/67c2f59b-23ae-41a6-83a4-d5ac8026595b)<br>
 ![image](https://github.com/jhe2426/Movie_Page_Project/assets/117806984/b2043964-a6eb-4af9-9362-1553c1df80f1)<br>
